@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+import re
 
 def content_to_text(page):
     """Find all divs with class 'article--container' then loop through the descendants"""
@@ -14,6 +15,16 @@ def content_to_text(page):
                 corpus += "{}\n".format(d.text)
     return corpus
 
-def aggregate_corpora(adresses):
+def aggregate_corpora(pages, path):
     """For each address we write the result of content_to_text to file"""
-    pass
+    corpora = ""
+    file = path
+    for i in pages:
+        corpora += "{}".format(content_to_text(i))
+    with open(file, 'a', encoding='utf-8') as out:
+        out.write(corpora)
+
+def string_to_vect(file):
+    f = open(file, 'r')
+    vect = f
+    return vect
