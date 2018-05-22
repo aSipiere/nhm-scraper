@@ -9,14 +9,15 @@ http://www.nhm.ac.uk/discover/how-we-became-human.html
 
 http://www.nhm.ac.uk/discover/the-origin-of-our-species.html
 
-#####Hint: 
+###Hint: 
 
 There are many ways to perform the text extraction, one would be using an XPath expression. If you wanted to extract just the paragraph and H1 text within the URL’s you could use the following XPath (it will need amending to include H2 text as well).
+
 ```/html/body//div[contains(@class,'article--container')]//p|//h1```
 
 ## Running the Code
 ### Setup Virtual Environment
-
+Using venvwrapper or venvwrapper-win
 ```bash
 cd WORKINGDIRECTORY
 git clone git@github.com:aSipiere/nhm-scraper.git
@@ -30,4 +31,7 @@ If python3 is the only version on your system then `-p python` is fine too.
     * Tests
     * Metrics
 * Soup
+    * ~~div article container~~
+    * ~~h1, h2, p~~
+    * for loop
 * NLTK (stopwords) > TF-IDF (possibly good enough alone?)
