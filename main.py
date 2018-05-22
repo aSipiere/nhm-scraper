@@ -11,6 +11,7 @@ for i in pages:
     else:
         print("Status 200-OK")
 
-corpus = aggregate_corpora(pages)
+corpus = aggregate_corpus(pages)
 
-get_tfidf(corpus)
+print(get_tfidf(corpus))
+

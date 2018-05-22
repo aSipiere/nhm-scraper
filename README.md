@@ -17,28 +17,28 @@ There are many ways to perform the text extraction, one would be using an XPath 
 
 # Results
 
-| Rank | Word          | TF-IDF Score        |
-|------|---------------|---------------------|
-| 1    | gough         | 0.14783080151679642 |
-| 2    | cave          | 0.13590949822372375 |
-| 3    | museum        | 0.16023458460963863 |
-| 4    | human         | 0.17585076404130193 |
-| 5    | evidence      | 0.17723715908277887 |
-| 6    | points        | 0.2467815284976994  |
-| 7    | sophisticated | 0.2467815284976994  |
-| 8    | culture       | 0.214732324323041   |
-| 9    | butchering    | 0.2467815284976994  |
-| 10   | carving       | 0.22803394587756834 |
-| 11   | remains       | 0.19598474170290997 |
-| 12   | says          | 0.19598474170290997 |
-| 13   | dr            | 0.214732324323041   |
-| 14   | silvia        | 0.16393553752825157 |
-| 15   | bello         | 0.22803394587756834 |
-| 16   | scientist     | 0.2467815284976994  |
-| 17   | investigates  | 0.2467815284976994  |
-| 18   | evolution     | 0.17723715908277887 |
-| 19   | behaviour     | 0.19598474170290997 |
-| 20   | including     | 0.19598474170290997 |
+| Rank | word        | score |
+|------|-------------|-------|
+| 1    | visitors    | 0.129 |
+| 2    | africa      | 0.126 |
+| 3    | ancient     | 0.111 |
+| 4    | homo        | 0.109 |
+| 5    | neanderthal | 0.106 |
+| 6    | relatives   | 0.105 |
+| 7    | gallery     | 0.103 |
+| 8    | dna         | 0.099 |
+| 9    | species     | 0.096 |
+| 10   | like        | 0.091 |
+| 11   | evolved     | 0.091 |
+| 12   | recently    | 0.091 |
+| 13   | human       | 0.090 |
+| 14   | million     | 0.089 |
+| 15   | years       | 0.086 |
+| 16   | skull       | 0.085 |
+| 17   | lived       | 0.085 |
+| 18   | fossil      | 0.085 |
+| 19   | scientists  | 0.081 |
+| 20   | lineage     | 0.080 |
 
 ## Running the Code
 ### Setup Virtual Environment
@@ -52,11 +52,15 @@ mkvirtualenv -p python3 -r requirements.txt -a /PROJECTPATH nhmscraper
 If python3 is the only version on your system then `-p python` is fine too.
 
 ## To Do
-* Requests
-    * Tests
+* ~~Initial spike~~
+* ~~Requests~~
     * Metrics
-* Soup
+* ~~Soup~~
     * ~~div article container~~
     * ~~h1, h2, p~~
-    * for loop
-* NLTK (stopwords) > TF-IDF (possibly good enough alone?)
+    * ~~loop~~
+    * ~~tests~~
+* ~~NLTK (stopwords) > TF-IDF (possibly good enough alone?)~~
+    * tests
+* to csv
+* plots

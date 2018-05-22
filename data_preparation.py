@@ -11,12 +11,12 @@ def content_to_text(page):
         i_descendants = i.descendants
         for d in i_descendants:
             if d.name in ['h1', 'h2', 'p']:
-                corpus += "{}\n".format(d.text)
-    return corpus
+                text += "{}\n".format(d.text)
+    return text
 
-def aggregate_corpora(pages):
+def aggregate_corpus(pages):
     """For each address we write the result of content_to_text to file"""
-    corpora = []
+    corpus = []
     for i in pages:
-        corpora.append(content_to_text(i))
-    return corpora
+        corpus.append(content_to_text(i))
+    return corpus
