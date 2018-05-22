@@ -1,7 +1,6 @@
 from data_preparation import *
 from tokenization import *
 
-path = "data/corpora.txt"
 pages = ["http://www.nhm.ac.uk/discover/the-cannibals-of-goughs-cave.html",
          "http://www.nhm.ac.uk/discover/how-we-became-human.html",
          "http://www.nhm.ac.uk/discover/the-origin-of-our-species.html"]
@@ -12,10 +11,6 @@ for i in pages:
     else:
         print("Status 200-OK")
 
-aggregate_corpora(pages, path)
+corpus = aggregate_corpora(pages)
 
-vector = string_to_vect(path)
-
-
-
-get_tfidf(vector)
+get_tfidf(corpus)
