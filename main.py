@@ -14,4 +14,3 @@ for i in pages:
 corpus = aggregate_corpus(pages)
 
 print(get_tfidf(corpus))
-
